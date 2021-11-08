@@ -15,35 +15,28 @@ public class SaleSumDTO implements Serializable {
 
 
 	public SaleSumDTO(Seller seller ,Double sum) {
-		sellerName = seller.getName();
+		this.sellerName = seller.getName();
 		this.sum = sum;
 	}
+
+
 	public String getSellerName() {
 		return sellerName;
 	}
+
 
 	public void setSellerName(String sellerName) {
 		this.sellerName = sellerName;
 	}
 
 
-	public Long getVisited() {
-		return visited;
+	public Double getSum() {
+		return sum;
 	}
 
 
-	public void setVisited(Long visited) {
-		this.visited = visited;
-	}
-
-
-	public Long getDeals() {
-		return deals;
-	}
-
-
-	public void setDeals(Long deals) {
-		this.deals = deals;
+	public void setSum(Double sum) {
+		this.sum = sum;
 	}
 
 
